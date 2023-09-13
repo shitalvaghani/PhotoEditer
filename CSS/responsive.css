@@ -1,0 +1,268 @@
+@media (max-width:1199px) {
+
+    /* --------Form-1--------- */
+    /* library part */
+    .accordion .row .card {
+        /* height: 180px; */
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .first .box {
+        width: 32.5%;
+        padding: 15px;
+    }
+
+    .accordion .row p {
+        font-size: 15px;
+    }
+
+    /* color part */
+
+
+    .rgb-fields .field-input {
+        width: 35px;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .hex-field .field-input {
+        width: 75px;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    /* second part  */
+    .row .second {
+        height: auto;
+    }
+
+    .row .second .frem img {
+        margin-top: 9rem;
+        width: 490px;
+        height: 490px;
+    }
+
+    .row .second .button img {
+        margin: 45px;
+    }
+
+
+
+
+
+}
+
+
+
+@media (max-width:991px) {
+    /* First part  */
+
+    .accordion .row .card {
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .accordion .row p {
+        font-size: 15px;
+    }
+
+    .first .box {
+        width: 41.5%;
+    }
+
+    /* color part */
+
+
+    .rgb-fields .field-input {
+        width: 45px;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+
+    .hex-field .field-input {
+        width: 60px;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+
+
+    /* second part  */
+
+    #imggray img {
+        height: 25rem;
+        width: 25rem;
+    }
+
+
+
+}
+
+
+@media (max-width:767px) {
+
+    /* color part  */
+    h3 {
+        font-size: 17px;
+    }
+
+    .accordion .row .card {
+        height: 150px;
+        width: auto;
+
+    }
+
+    .first .box {
+        width: 41.5%;
+        padding: 13px;
+    }
+
+    .first .box .main-btn {
+        height: 40px;
+        padding: 10px 20px;
+
+    }
+
+    .accordion .row p {
+        font-size: 13px;
+    }
+
+    /* color part */
+    .rgb-fields .field-input {
+        width: 25px;
+        font-size: 10px;
+        margin-right: 3px;
+    }
+
+    .hex-field .field-input {
+        width: 40px;
+        font-size: 10px;
+        margin-right: 3px;
+    }
+
+    .spectrum-map {
+        height: 12rem;
+    }
+
+    /* second part   */
+
+    #imggray img {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    /*  library part*/
+
+
+
+
+    .row .first .heading p {
+        font-size: 13px;
+        font-weight: 600;
+
+    }
+
+
+    /* ----------Form-2---------- */
+
+
+}
+
+
+@media (max-width:575px) {
+
+    .accordion .row .card {
+        height: auto;
+
+    }
+
+    .accordion .row p {
+        font-size: 17px;
+    }
+
+
+
+    .first .box {
+        width: 100%;
+        padding: 15px;
+    }
+
+
+    .first .box .main-btn {
+        height: 48px;
+    }
+
+    .btn {
+        width: 265px;
+        margin-left: 5px;
+    }
+
+    .first .box .two .back {
+        font-weight: 700;
+    }
+
+    .row .first {
+        height: 25rem;
+    }
+
+    /* color part */
+    .rgb-fields .field-input {
+        width: 45px;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+
+    .hex-field .field-input {
+        width: 80px;
+        font-size: 15px;
+        margin-right: 5px;
+        flex-wrap: wrap;
+    }
+
+    .spectrum-map {
+        height: 12rem;
+    }
+
+    /* second part  */
+
+
+    .row .row .second .button img {
+        width: 150px;
+        margin: 20px 0;
+    }
+
+    .row .second .frem img {
+        height: 300px;
+        width: 300px;
+    }
+
+
+    /* ----------Form-2---------- */
+    .second{
+        margin-top: 28rem;
+    }
+    .accordion .row .card .two {
+
+
+        margin: 0px 20px;
+    }
+
+#buttons{
+    margin-bottom: 6rem;
+}
+
+    .accordion .row .card .three {
+        margin: 0px 20px;
+    }
+
+
+    .accordion .row .card .for {
+        margin: 0px 20px;
+    }
+
+
+
+
+}

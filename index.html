@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Photo Editer </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/colorpicker.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+    integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
+   
+
+</head>
+
+<body>
+
+    <div class="row">
+        <!--  part -1 -->
+        <div class="col-lg-4 col-sm-5  first">
+
+            <div class="pb-2 pt-4  px-3 bg">
+                <h3 class=" pb-2">Name Your Custom Style</h3>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name" autocomplete="off">
+            </div>
+            <hr>
+
+
+
+            <form id="form1">
+                <h3 class="pt-3 px-3 ">Choose Background</h3>
+
+                <div class=" pagination">
+
+                    <div class="btn-group mx-2 ">
+                        <button type="button" class="btn btn-primary page-link" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-b1" aria-expanded="false" aria-controls="collapse-b1">
+                            Library
+                        </button>
+                        <button type="button" class="btn btn-primary  page-link" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-b2" aria-expanded="false" aria-controls="collapse-b2">
+                            Solid Color
+                        </button>
+                    </div>
+                </div>
+
+                <!-- library part -->
+
+                <div id="myGroup">
+
+                    <div class="collapse" id="collapse-b1" data-bs-parent="#myGroup">
+                        <div class="alert mx-3 ">
+                            <div class="accordion accordion" id="accordionExample">
+
+                                <div class="accordion-item pt-1 ">
+                                    <h2 class="accordion-header" id="headingFor">
+                                        <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFor" aria-expanded="true"
+                                            aria-controls="collapseFor">
+                                            Gradietnt
+                                        </button>
+
+
+                                    </h2>
+                                    <div id="collapseFor" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFor" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body d-flex justify-content-center">
+                                            <form>
+                                                <div class="select-box">
+                                                    <select>
+                                                        <option value="to top">Top</option>
+                                                        <option value="to right top">Right top</option>
+                                                        <option value="to right">Right</option>
+                                                        <option value="to right bottom">Right bottom</option>
+                                                        <option value="to bottom">Bottom</option>
+                                                        <option value="to left bottom">Left bottom</option>
+                                                        <option value="to left">Left</option>
+                                                        <option value="to left top" selected="">Left top
+                                                        </option>
+                                                    </select>
+                                                </div>
+
+
+                                            </form>
+                                            <div class="colors">
+                                                <input class="coloro col" type="color" name="colorone" value="#bb7994"
+                                                    id="colornone">
+                                                <input class="colort col" type="color" name="colortwo" value="#70422b"
+                                                    id="colornone">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="accordion-item pt-1">
+
+                                    <h2 class="accordion-header" id="headingTwo">
+
+                                        <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="true"
+                                            aria-controls="collapseFive">
+                                            Office
+                                        </button>
+
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+
+
+                                                <div class="col-6">
+                                                    <div class="card mb-4" id="card5" onclick="gray()">
+                                                        <div class="img1"></div>
+
+
+                                                        <p>Gray</p>
+                                                    </div>
+                                                    <div class="card mb-2" id="card6" onclick="blue()">
+                                                        <div class="img2"></div>
+
+
+                                                        <p>Blue</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card mb-4" id="card7" onclick="darkgray()">
+                                                        <div class="img3"></div>
+
+
+                                                        <p>DrarkGray</p>
+                                                    </div>
+                                                    <div class="card mb-2" id="card8" onclick="orange()">
+                                                        <div class="img4"></div>
+
+                                                        <p>Orange</p>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+                    <!--  color part -->
+
+                    <div class="collapse" id="collapse-b2" data-bs-parent="#myGroup">
+                        <div class="alert">
+
+                            <div class="color-picker-panel">
+                                <div class="panel-row text-center">
+                                    <div class="spectrum-map">
+                                        <button id="spectrum-cursor" class="color-cursor"></button>
+                                        <canvas id="spectrum-canvas"></canvas>
+                                    </div>
+                                    <div class="hue-map">
+                                        <button id="hue-cursor" class="color-cursor"></button>
+                                        <canvas id="hue-canvas"></canvas>
+                                    </div>
+                                </div>
+                                <div class="panel-row d-flex mt-3 forflex">
+                                    <div d="hex-field" class="field-group value-fields hex-field d-flex">
+                                        <label class="field-label">Hex:</label>
+                                        <input type="text" id="hex" class="field-input">
+                                    </div>
+                                    <div id="rgb-fields" class="field-group  value-fields rgb-fields d-flex">
+                                        <div class="field-group">
+                                            <span class="field-label">R:</span>
+                                            <input type="number" max="255" min="0" id="red"
+                                                class="field-input rgb-input">
+                                        </div>
+                                        <div class="field-group">
+                                            <span class="field-label">G:</span>
+                                            <input type="number" max="255" min="0" id="green"
+                                                class="field-input rgb-input">
+                                        </div>
+                                        <div class="field-group">
+                                            <span class="field-label">B:</span>
+                                            <input type="number" max="255" min="0" id="blue"
+                                                class="field-input rgb-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-row eem mt-3 d-flex ">
+                                    <label class="save">Saved colors:</label>
+                                    <button id="add-swatch" class="button add-swatch d-flex">
+                                        <span id="color-indicator" class="color-indicator"></span>
+                                        <span style="color: orange; font-size: 20px;">ADD</span>
+                                    </button>
+                                </div>
+                                <div class="panel-row mb-5">
+                                    <div class="swatches default-swatches swatches custom-swatches" id="user-swatches">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+
+            <!-- bottom part -->
+            <div class="box d-flex fixed-bottom ">
+                <div>
+                    <a id="back" class="back"><img src="img/arrow-left.png" class="me-1" alt="">Back</a>
+
+                </div>
+                <div>
+                    <button type="submit" class=" border-0" id="next">NEXT</button>
+                    <div class="is-hidden" onclick="myFunction()">
+                        <button type="button" class=" download border-0" id="download">Download</button>
+                        <div id="snackbar">Image Hase Been Downloaded📸.</div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- </form> -->
+
+
+
+
+            <form id="form2">
+
+                <div class="pb-2">
+
+                    <h3 class=" ">Choose Style</h3>
+
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item p-2 ">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <a href="#"><img src="img/colorfilter.png" class="me-1" alt="">Shape</a>
+
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="row" id="shape">
+                                        <div class="col-6">
+                                            <div class="card mb-4" id="card5" onclick="square()">
+                                                <div class="one"></div>
+
+
+                                                <p>Square</p>
+                                            </div>
+                                            <div class="card mb-2" id="card6" onclick="leaf()">
+                                                <div class="two"></div>
+
+
+                                                <p>Leaf</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card mb-4" id="card7" onclick="circle()">
+                                                <div class="three"></div>
+
+
+                                                <p>Circle</p>
+                                            </div>
+                                            <div class="card mb-2" id="card8" onclick="egg()">
+                                                <div class="for"></div>
+
+                                                <p>Egg</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item p-2">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <a href="#"><img src="img/mask.png" class="me-1" alt="">Color Treatment</a>
+
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+
+                                    <div class="row" id="bwimg">
+                                        <div class="col-6">
+                                            <div class="card  mb-2" id="card9" onclick="light()">
+                                                <div class="three"></div>
+
+                                                <p>Standard Color</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card  mb-2" id="card10" onclick="blackwhite()">
+                                                <div class="three too"></div>
+
+                                                <p>Black&White</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="accordion-item p-2 ">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <a href="#"><img src="img/pen-tool-2.png" class="me-1" alt="">Outline</a>
+
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="row" id="outlineimg">
+                                        <div class="col-6">
+                                            <div class="card  mb-2" id="card12" onclick="showOutline()">
+                                                <div class="three outline"></div>
+                                                <p>Yes</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card  mb-2" id="card11" onclick="notshowOutline()">
+                                                <div class="three"></div>
+                                                <p>No</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </form>
+
+
+        </div>
+
+
+        <!-- part-2 -->
+        <div class="col-lg-8 col-sm-7 pb-4 text-center second">
+
+
+            <div id="content">
+                <input type="file" id="fileInput" class="input-file" accept="image/*" multiple="false" name="upload-img"
+                    hidden />
+                <label for="fileInput" id="imggray">
+                    <img src="img/aplodedimage.jpg" class="default imgrb" id="box">
+                </label>
+            </div>
+            <div id="buttons">
+                <button type="button" id="undo_btn" class="mobnone"><label>Undo</label><img src="img/Undo.png">
+                </button>
+                <button type="button" id="redo_btn" class="mobnone"><img src="img/Redo.png"><label>Redo</label>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+
+    <script src="JS/colorpicker.js"></script>
+    <script src="JS/main.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

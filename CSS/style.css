@@ -1,0 +1,538 @@
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  html {
+    overflow-x: hidden;
+      scroll-behavior: smooth;
+  }
+
+  body {
+      overflow-x: hidden;
+      width: 100%;
+  }
+
+  h3 {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(18, 42, 75, 1);
+  }
+
+  a {
+      text-decoration: none;
+      color: rgba(60, 77, 101, 1);
+  }
+
+  a:hover {
+      color: rgba(18, 42, 75, 1);
+  }
+
+  /* part -1 css  */
+  .row .first {
+      position: relative;
+      /* overflow-x: hidden; */
+  }
+
+
+  #form2 {
+    display: none;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+
+  .row .first .bg input {
+
+      width: 100%;
+      height: 52px;
+      box-shadow: none;
+      padding: 16px 16px 14px 16px;
+      border-radius: 6px;
+      border: 1px;
+      gap: 10px;
+      background: linear-gradient(0deg, #F6F6F8, #F6F6F8),
+          linear-gradient(0deg, #E5E7EB, #E5E7EB);
+      border: 1px solid rgba(229, 231, 235, 1)
+  }
+
+  .row .first .btn-group {
+      overflow: hidden;
+      width: 100%;
+      height: 48px;
+  }
+
+
+  .btn {
+      width: 208px;
+      margin-left: 5px;
+  }
+
+
+  .row .first .btn-group button {
+
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 20px;
+      color: #565658;
+      box-shadow: none;
+      cursor: pointer;
+
+      border: 2px solid rgba(246, 246, 248, 1);
+
+
+  }
+
+  /* ------ library part css------ */
+  .accordion-button:not(.collapsed) {
+      color: black !important;
+      background-color: transparent !important;
+      box-shadow: none;
+  }
+
+  .accordion-button::after {
+      background-image: url(../img/chevron-down.png);
+
+  }
+
+  .accordion-button:not(.collapsed)::after {
+      background-image: url(../img/chevron2-down.png);
+      transform: rotate(0) !important;
+  }
+
+  .accordion-button:focus {
+      box-shadow: none;
+  }
+
+  .alert {
+      padding: 1rem 0rem !important;
+  }
+
+  hr {
+      margin: 5px 0px;
+  }
+
+  .accordion-item.pt-1 {
+      border: none;
+  }
+
+  .accordion-item.pb-2 {
+
+      background-color: transparent;
+  }
+
+
+  .accordion-button {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0em;
+      padding: 10px 0.5rem !important;
+      background-color: transparent !important;
+      transition: none;
+      text-align: left;
+      color: rgba(60, 77, 101, 1);
+
+  }
+
+  /* gradients part */
+
+
+  select {
+      border-radius: 5px;
+      padding: 5px 10px;
+
+  }
+
+  #colornone {
+      border-radius: 5px;
+      border: 1px solid #a09f9f1c;
+      width: 5.5rem;
+      height: 1.5rem;
+      margin: 5px 5px;
+  }
+
+
+  /* office part */
+  .column {
+      background: #F6F6F8;
+      /* gap: 4px; */
+      text-align: center;
+      /* margin: 10px 15px; */
+      width: 42% !important;
+      border-radius: 6px;
+  }
+
+  .colorname {
+      font-size: 20px;
+      font-weight: 400;
+      width: 100%;
+      padding-bottom: 8px;
+      color: #122A4B;
+  }
+
+.accordion .row .gradients-img {
+      width: 100%;
+      height: 9rem;
+      border: 0;
+  }
+
+
+
+  .accordion .row p {
+      padding-top: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      color: rgba(18, 42, 75, 1);
+
+
+  }
+
+
+  .accordion .row .card {
+      width: 100%;
+      /* height: 150px; */
+      border-radius: 5px;
+      cursor: pointer;
+      overflow: hidden;
+      border: 4px solid rgba(246, 246, 248, 1);
+      background: rgba(246, 246, 248, 1);
+
+  }
+
+  .accordion .row .card .img1 {
+    height: 130px;
+      background: radial-gradient(50% 50% at 50% 50%, #EDEDED 0%, #BBBBBB 100%);
+  }
+
+  .accordion .row .card .img2 {
+    height: 130px;
+      background: radial-gradient(50% 50% at 50% 50%, #5670E7 0%, #2E4084 100%);
+
+  }
+
+  .accordion .row .card .img3 {
+    height: 130px;
+
+      background: radial-gradient(50% 50% at 50% 50%, #565656 0%, #292929 100%);
+
+  }
+
+  .accordion .row .card .img4 {
+    height: 130px;
+
+      background: radial-gradient(50% 50% at 50% 50%, #BB7F2D 0%, #603C14 100%);
+
+  }
+
+
+  /* -------- color part css start------------- */
+  /* Custom poiners  */
+  hex-input::part(input) {
+      display: block;
+      box-sizing: border-box;
+      width: 90px;
+      margin: 20px auto;
+      padding: 6px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: #eee;
+      outline: none;
+      font: inherit;
+      text-transform: uppercase;
+      text-align: center;
+  }
+
+  hex-input::part(input):focus {
+      border-color: #4298ef;
+  }
+
+  .roleslider {
+      width: 300px !important;
+  }
+
+  .row .first .heading p {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+      margin: 15px 20px;
+      letter-spacing: 0em;
+      color: rgba(18, 42, 75, 1);
+  }
+
+  .row .first .heading p span {
+      color: orange;
+      cursor: pointer;
+  }
+
+
+
+
+  .row .first .heading .dot {
+      height: 25px;
+      width: 25px;
+      margin-right: 8px;
+      border-radius: 50%;
+      display: inline-block;
+  }
+
+  .panel-row {
+      position: relative;
+      margin: 0 10px 10px;
+  }
+
+  .default-swatches {
+      width: 100%;
+  }
+
+  .swatch {
+      height: 30px;
+      width: 30px;
+      border-radius: 50px;
+      border: transparent;
+  }
+
+
+  /* bottum part css */
+
+  .first .box {
+
+      width: 33%;
+      background-color: white;
+      justify-content: space-between;
+      padding: 10px 0px;
+      border: 1px 0px 0px 0px;
+      border-top: 1px solid rgba(229, 231, 235, 1);
+      box-shadow: 0px -15px 70px 0px rgba(0, 0, 0, 0.12);
+  }
+
+
+  .first .box button {
+      width: auto;
+      height: 52px;
+      color: rgb(255, 255, 255);
+
+      background: rgba(252, 158, 17, 1);
+      padding: 10px 40px;
+      border-radius: 6px;
+  }
+
+  .first .box button:hover {
+      background: rgb(243, 148, 5);
+
+  }
+
+  .accordion .accordion-item a img {
+      padding-right: 5px;
+  }
+
+  .first .box .back {
+    cursor: pointer;
+      font-weight: 700;
+      padding: 13px 0;
+      display: none;
+  }
+
+  .first .box .download {
+      display: none;
+  }
+
+
+
+  /* second part css  */
+
+
+  .row .second {
+      /* height: 100%; */
+      height: auto;
+      padding-top: 10rem;
+      background-color: rgba(239, 229, 215, 0.79);
+  }
+
+
+  
+  #fileInput {
+      display: none;
+  }
+
+
+
+  #imggray img {
+      width: 30rem;
+      height: 30rem;
+      display: block;
+      object-fit: cover;
+      transform: none;
+      /* padding: 8rem; */
+      margin-left: auto;
+      margin-right: auto;
+      /* margin-top: 10rem; */
+  }
+
+  #content label {
+      display: contents;
+  }
+
+  #buttons {
+      display: flex;
+      transform: none;
+      gap: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+      width: fit-content;
+      height: 3.625rem;
+      padding: 1.5rem 1.5rem;
+      box-sizing: border-box;
+      background: #fff;
+      box-shadow: 0px 10px 38px rgba(230, 211, 185, 0.79);
+  }
+
+  #undo_btn,
+  #redo_btn {
+      display: flex;
+      /* width: 7.5rem; */
+      /* padding: 1rem; */
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+      color: #3C4D65;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 140%;
+      letter-spacing: 0.02rem;
+      text-transform: uppercase;
+      border: 0;
+  }
+
+
+
+
+
+
+
+
+  #snackbar {
+      visibility: hidden;
+      min-width: 250px;
+      margin-left: -125px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 2px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1;
+      left: 50%;
+      top: 30px;
+      font-size: 17px;
+  }
+
+  #snackbar.show {
+      visibility: visible;
+      -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  @-webkit-keyframes fadein {
+      from {
+          top: 0;
+          opacity: 0;
+      }
+
+      to {
+          top: 30px;
+          opacity: 1;
+      }
+  }
+
+  @keyframes fadein {
+      from {
+          top: 0;
+          opacity: 0;
+      }
+
+      to {
+          top: 30px;
+          opacity: 1;
+      }
+  }
+
+  @-webkit-keyframes fadeout {
+      from {
+          top: 30px;
+          opacity: 1;
+      }
+
+      to {
+          top: 0;
+          opacity: 0;
+      }
+  }
+
+  @keyframes fadeout {
+      from {
+          top: 30px;
+          opacity: 1;
+      }
+
+      to {
+          top: 0;
+          opacity: 0;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+  /* -------- Form-2 css start------------- */
+
+
+
+  .accordion .row .card .one {
+      height: 130px;
+      border-radius: 6px 6px 0px 0px;
+      background: rgba(80, 72, 225, 1);
+  }
+
+  .accordion .row .card .two {
+      height: 130px;
+
+      border-radius: 0 68%;
+      background: rgba(80, 72, 225, 1);
+  }
+
+
+  .accordion .row .card .too {
+      filter: grayscale(100%);
+  }
+
+  .accordion .row .card .three {
+      height: 130px;
+      border-radius: 50%;
+      background: rgba(80, 72, 225, 1);
+  }
+
+  .accordion .row .card .for {
+      height: 130px;
+      background: rgba(80, 72, 225, 1);
+      border-radius: 61% / 84% 84% 38% 38%;
+  }
+
+  .accordion .row .card .outline {
+    border: 5px solid white;
+
+  }
