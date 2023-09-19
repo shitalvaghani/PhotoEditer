@@ -36,17 +36,10 @@
     /* second part  */
     .row .second {
         height: auto;
+        padding-top: 9.7rem;
     }
 
-    .row .second .frem img {
-        margin-top: 9rem;
-        width: 490px;
-        height: 490px;
-    }
 
-    .row .second .button img {
-        margin: 45px;
-    }
 
 
 
@@ -91,11 +84,9 @@
 
     /* second part  */
 
-    #imggray img {
-        height: 25rem;
-        width: 25rem;
+    .row .second {
+        padding-top: 9.6rem;
     }
-
 
 
 }
@@ -151,6 +142,10 @@
     #imggray img {
         height: 20rem;
         width: 20rem;
+    }
+
+    .row .second {
+        padding-top: 12.5rem;
     }
 
     /*  library part*/
@@ -226,40 +221,38 @@
     }
 
     /* second part  */
-
-
-    .row .row .second .button img {
-        width: 150px;
-        margin: 20px 0;
+    #imggray img {
+        height: 18rem;
+        width: 18rem;
     }
 
-    .row .second .frem img {
-        height: 300px;
-        width: 300px;
+    .row .second {
+        padding-top: 5rem;
+        margin-top: 14rem;
     }
-
+    #buttons {
+        margin-bottom: 7rem;
+    }
 
     /* ----------Form-2---------- */
-    .second{
-        margin-top: 28rem;
+    
+    .accordion .row .card .one {
+        margin: 0px 0px;
     }
     .accordion .row .card .two {
 
 
-        margin: 0px 20px;
+        margin: 0px 0px;
     }
 
-#buttons{
-    margin-bottom: 6rem;
-}
 
     .accordion .row .card .three {
-        margin: 0px 20px;
+        margin: 0px 0px;
     }
 
 
     .accordion .row .card .for {
-        margin: 0px 20px;
+        margin: 0px 0px;
     }
 
 

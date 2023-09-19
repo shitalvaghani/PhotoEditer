@@ -15,6 +15,25 @@
       width: 100%;
   }
 
+  
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6d6d6d;
+}
+
+
   h3 {
       font-size: 22px;
       font-weight: 600;
@@ -35,22 +54,22 @@
 
   /* part -1 css  */
   .row .first {
-      position: relative;
+      /* position: relative; */
       /* overflow-x: hidden; */
   }
 
 
   #form2 {
     display: none;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 21px;
+    margin-top: 9px;
   }
 
 
   .row .first .bg input {
 
       width: 100%;
-      height: 52px;
+      height: 40px;
       box-shadow: none;
       padding: 16px 16px 14px 16px;
       border-radius: 6px;
@@ -132,7 +151,7 @@
       font-weight: 600;
       line-height: 24px;
       letter-spacing: 0em;
-      padding: 10px 0.5rem !important;
+      padding: 5px 0.5rem !important;
       background-color: transparent !important;
       transition: none;
       text-align: left;
@@ -168,6 +187,16 @@
       border-radius: 6px;
   }
 
+  #collapseFive{
+    color: white;
+    padding: 10px;
+    height: 14rem;
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+  }
+
   .colorname {
       font-size: 20px;
       font-weight: 400;
@@ -185,7 +214,7 @@
 
 
   .accordion .row p {
-      padding-top: 10px;
+      /* padding-top: 10px; */
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
@@ -208,29 +237,46 @@
   }
 
   .accordion .row .card .img1 {
-    height: 130px;
+    height: 100px;
       background: radial-gradient(50% 50% at 50% 50%, #EDEDED 0%, #BBBBBB 100%);
   }
 
   .accordion .row .card .img2 {
-    height: 130px;
+    height: 100px;
       background: radial-gradient(50% 50% at 50% 50%, #5670E7 0%, #2E4084 100%);
 
   }
 
   .accordion .row .card .img3 {
-    height: 130px;
+    height: 100px;
 
       background: radial-gradient(50% 50% at 50% 50%, #565656 0%, #292929 100%);
 
   }
 
   .accordion .row .card .img4 {
-    height: 130px;
+    height: 100px;
 
       background: radial-gradient(50% 50% at 50% 50%, #BB7F2D 0%, #603C14 100%);
 
   }
+  .accordion .row .card .img5 {
+    height: 100px;
+    background-color: aliceblue;
+  }
+  .accordion .row .card .img6 {
+    height: 100px;
+    background-color: powderblue;
+  }
+  .accordion .row .card .img7 {
+    height: 100px;
+    background-color: lightgray;
+  }
+  .accordion .row .card .img8 {
+    height: 100px;
+    background-color: steelblue;
+  }
+
 
 
   /* -------- color part css start------------- */
@@ -351,8 +397,9 @@
 
   .row .second {
       /* height: 100%; */
-      height: auto;
-      padding-top: 10rem;
+      height:fit-content;
+      /* height: auto; */
+      padding-top: 4rem;
       background-color: rgba(239, 229, 215, 0.79);
   }
 
@@ -365,12 +412,12 @@
 
 
   #imggray img {
-      width: 30rem;
-      height: 30rem;
+      width: 23rem;
+      height: 23rem;
+
       display: block;
       object-fit: cover;
       transform: none;
-      /* padding: 8rem; */
       margin-left: auto;
       margin-right: auto;
       /* margin-top: 10rem; */
@@ -386,8 +433,8 @@
       gap: 1rem;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 5rem;
-      margin-bottom: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 5rem;
       width: fit-content;
       height: 3.625rem;
       padding: 1.5rem 1.5rem;
@@ -412,13 +459,6 @@
       text-transform: uppercase;
       border: 0;
   }
-
-
-
-
-
-
-
 
   #snackbar {
       visibility: hidden;
@@ -491,27 +531,26 @@
   }
 
 
-
-
-
-
-
-
-
-
   /* -------- Form-2 css start------------- */
 
 
 
   .accordion .row .card .one {
-      height: 130px;
+      height: 80px;
+      width: auto;
+      margin: 0px 10px;
+      /* padding: 50px 50px; */
+      /* width: 120px; */
+      /* margin-left: auto;
+      margin-right: auto; */
       border-radius: 6px 6px 0px 0px;
       background: rgba(80, 72, 225, 1);
   }
 
   .accordion .row .card .two {
-      height: 130px;
-
+      height: 80px;
+      width: auto;
+      margin: 0px 10px;
       border-radius: 0 68%;
       background: rgba(80, 72, 225, 1);
   }
@@ -522,13 +561,17 @@
   }
 
   .accordion .row .card .three {
-      height: 130px;
+      height: 80px;
+      width: auto;
+      margin: 0px 10px;
       border-radius: 50%;
       background: rgba(80, 72, 225, 1);
   }
 
   .accordion .row .card .for {
-      height: 130px;
+      height: 80px;
+      width: auto;
+      margin: 0px 10px;
       background: rgba(80, 72, 225, 1);
       border-radius: 61% / 84% 84% 38% 38%;
   }

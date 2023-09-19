@@ -64,6 +64,48 @@ colorInputs.forEach((input) => {
 });
 
 
+
+
+// //remove background
+
+let imageURL;
+
+function submitHandler() {
+  // console.log("click");
+  const fileInput = document.getElementById("fileInput");
+  // console.log(fileInput.files);
+  const image = fileInput.files[0];
+
+  // Multipart file
+
+  const formData = new FormData();
+  formData.append("image_file", image);
+  formData.append("size", "auto");
+  const apiKey = "1MwvniQYx8HrCC4AJ8Dv8Rro";
+  
+  fetch("https://api.remove.bg/v1.0/removebg", {
+    method: "POST",
+    headers: {
+      "X-Api-Key": apiKey,
+    },
+    body: formData,
+  })
+    .then(function (reponse) {
+      return reponse.blob();
+    })
+    .then(function (blob) {
+      // console.log(blob);
+      const url = URL.createObjectURL(blob);
+      imageURL = url;
+      const img = document.querySelector("#box");
+      img.src = url;
+      // document.body.appendChild(img);
+    })
+
+    .catch();
+}
+
+
 // -------------office part-----------
 
 function gray() {
@@ -89,7 +131,25 @@ function orange() {
   image.style.background = " radial-gradient(50% 50% at 50% 50%, #BB7F2D 0%, #603C14 100%)";
 
 }
+function aliceblue() {
+  var image = document.querySelector("#box");
+  image.style.background = "aliceblue";
 
+}
+function powderblue() {
+  var image = document.querySelector("#box");
+  image.style.background = " powderblue";
+
+}
+function lightgray() {
+  var image = document.querySelector("#box");
+  image.style.background = " lightgray";
+
+}function steelblue() {
+  var image = document.querySelector("#box");
+  image.style.background = "steelblue";
+
+}
 
 
 //shap change
@@ -181,7 +241,6 @@ let fileInput = document.getElementById("fileInput");
 fileInput.onchange = function () {
     box.src = URL.createObjectURL(fileInput.files[0]);
 }
-
 
 //--------- undo & redo-------
 

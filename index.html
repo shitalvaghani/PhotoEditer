@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
 
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
-    integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+        integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
+
 
 </head>
 
@@ -28,8 +28,8 @@
         <!--  part -1 -->
         <div class="col-lg-4 col-sm-5  first">
 
-            <div class="pb-2 pt-4  px-3 bg">
-                <h3 class=" pb-2">Name Your Custom Style</h3>
+            <div class="pb-1 pt-2  px-3 bg">
+                <h3 class=" pb-1">Name Your Custom Style</h3>
                 <input type="text" class="form-control" id="name" placeholder="Enter Name" autocomplete="off">
             </div>
             <hr>
@@ -37,7 +37,7 @@
 
 
             <form id="form1">
-                <h3 class="pt-3 px-3 ">Choose Background</h3>
+                <h3 class="pt-1 px-3 ">Choose Background</h3>
 
                 <div class=" pagination">
 
@@ -55,9 +55,9 @@
 
                 <!-- library part -->
 
-                <div id="myGroup">
+                <div id="myGroup" onclick="submitHandler()">
 
-                    <div class="collapse" id="collapse-b1" data-bs-parent="#myGroup">
+                    <div class="collapse"  id="collapse-b1" data-bs-parent="#myGroup">
                         <div class="alert mx-3 ">
                             <div class="accordion accordion" id="accordionExample">
 
@@ -122,9 +122,8 @@
 
 
                                                 <div class="col-6">
-                                                    <div class="card mb-4" id="card5" onclick="gray()">
+                                                    <div class="card mb-3" id="card5" onclick="gray()">
                                                         <div class="img1"></div>
-
 
                                                         <p>Gray</p>
                                                     </div>
@@ -136,7 +135,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
-                                                    <div class="card mb-4" id="card7" onclick="darkgray()">
+                                                    <div class="card mb-3" id="card7" onclick="darkgray()">
                                                         <div class="img3"></div>
 
 
@@ -146,6 +145,34 @@
                                                         <div class="img4"></div>
 
                                                         <p>Orange</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card mb-3" id="card7" onclick="aliceblue()">
+                                                        <div class="img5"></div>
+
+
+                                                        <p>AliceBlue</p>
+                                                    </div>
+                                                    <div class="card mb-2" id="card8" onclick="powderblue()">
+                                                        <div class="img6"></div>
+
+                                                        <p>PowderBlue</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card mb-3" id="card7" onclick="lightgray()">
+                                                        <div class="img7"></div>
+
+
+                                                        <p>LightGray</p>
+                                                    </div>
+                                                    <div class="card mb-2" id="card8" onclick="steelblue()">
+                                                        <div class="img8"></div>
+
+                                                        <p>SteelBlue</p>
                                                     </div>
 
                                                 </div>
@@ -183,7 +210,7 @@
                                         <canvas id="hue-canvas"></canvas>
                                     </div>
                                 </div>
-                                <div class="panel-row d-flex mt-3 forflex">
+                                <div class="panel-row d-flex mt-1 forflex">
                                     <div d="hex-field" class="field-group value-fields hex-field d-flex">
                                         <label class="field-label">Hex:</label>
                                         <input type="text" id="hex" class="field-input">
@@ -206,14 +233,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel-row eem mt-3 d-flex ">
+                                <div class="panel-row eem mt-1 d-flex ">
                                     <label class="save">Saved colors:</label>
                                     <button id="add-swatch" class="button add-swatch d-flex">
                                         <span id="color-indicator" class="color-indicator"></span>
                                         <span style="color: orange; font-size: 20px;">ADD</span>
                                     </button>
                                 </div>
-                                <div class="panel-row mb-5">
+                                <div class="panel-row ">
                                     <div class="swatches default-swatches swatches custom-swatches" id="user-swatches">
                                     </div>
                                 </div>
@@ -270,13 +297,13 @@
                                 <div class="accordion-body">
                                     <div class="row" id="shape">
                                         <div class="col-6">
-                                            <div class="card mb-4" id="card5" onclick="square()">
+                                            <div class="card mb-2" id="card5" onclick="square()">
                                                 <div class="one"></div>
 
 
                                                 <p>Square</p>
                                             </div>
-                                            <div class="card mb-2" id="card6" onclick="leaf()">
+                                            <div class="card mb-1" id="card6" onclick="leaf()">
                                                 <div class="two"></div>
 
 
@@ -284,13 +311,13 @@
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="card mb-4" id="card7" onclick="circle()">
+                                            <div class="card mb-2" id="card7" onclick="circle()">
                                                 <div class="three"></div>
 
 
                                                 <p>Circle</p>
                                             </div>
-                                            <div class="card mb-2" id="card8" onclick="egg()">
+                                            <div class="card mb-1" id="card8" onclick="egg()">
                                                 <div class="for"></div>
 
                                                 <p>Egg</p>
@@ -379,7 +406,7 @@
 
 
         <!-- part-2 -->
-        <div class="col-lg-8 col-sm-7 pb-4 text-center second">
+        <div class="col-lg-8 col-sm-7  text-center second">
 
 
             <div id="content">
@@ -390,9 +417,9 @@
                 </label>
             </div>
             <div id="buttons">
-                <button type="button" id="undo_btn" class="mobnone"><label>Undo</label><img src="img/Undo.png">
+                <button type="button" id="undo_btn"><label>Undo</label><img src="img/Undo.png">
                 </button>
-                <button type="button" id="redo_btn" class="mobnone"><img src="img/Redo.png"><label>Redo</label>
+                <button type="button" id="redo_btn"><img src="img/Redo.png"><label>Redo</label>
                 </button>
 
             </div>
@@ -400,9 +427,6 @@
         </div>
 
     </div>
-
-
-    
 
 
     <script src="JS/colorpicker.js"></script>
